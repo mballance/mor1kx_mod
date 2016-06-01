@@ -38,6 +38,7 @@ ${MOR1KX}/mor1kx/rtl/verilog/mor1kx_ticktimer.v
 ${MOR1KX}/mor1kx/rtl/verilog/mor1kx_true_dpram_sclk.v
 ${MOR1KX}/mor1kx/rtl/verilog/mor1kx_wb_mux_cappuccino.v
 ${MOR1KX}/mor1kx/rtl/verilog/mor1kx_wb_mux_espresso.v
+/*
 ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_addsub.v
 ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_cmp.v
 ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_f2i.v
@@ -45,6 +46,7 @@ ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_i2f.v
 ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_muldiv.v
 ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_rnd.v
 ${MOR1KX}/mor1kx/rtl/verilog/pfpu32/pfpu32_top.v
+ */
 
 ${MOR1KX}/rtl/mor1kx_w.sv
 

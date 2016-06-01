@@ -1,4 +1,4 @@
 [submodule "mor1kx"]
 	path = mor1kx
 	url = https://github.com/mballance/mor1kx.git
-	branch = master
+	branch = mor1kx_v3

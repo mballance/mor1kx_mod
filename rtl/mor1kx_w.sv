@@ -11,7 +11,15 @@
  */
 module mor1kx_w
 		#(
+		// {package}{cluster}{core}
+		// - my package ID
+		// - my cluster ID
+		// - my core ID
 		parameter MULTICORE_CORE_ID     = 0,
+		// {packages}{cluster}{core}
+		// - number of packages in the system
+		// - number of clusters in my package
+		// - number of cores in my cluster
 		parameter MULTICORE_NUM_CORES   = 1,
 		parameter OPTION_OPERAND_WIDTH	= 32,
 
@@ -54,6 +62,7 @@ module mor1kx_w
 		parameter FEATURE_CARRY_FLAG	= "ENABLED",
 
 		parameter FEATURE_FASTCONTEXTS	= "NONE",
+		// Only on trunk
 		parameter OPTION_RF_CLEAR_ON_INIT	= 0,
 		parameter OPTION_RF_NUM_SHADOW_GPR	= 0,
 		parameter OPTION_RF_ADDR_WIDTH	= 5,
@@ -82,6 +91,7 @@ module mor1kx_w
 		parameter FEATURE_CUST7		= "NONE",
 		parameter FEATURE_CUST8		= "NONE",
 
+		// Only on trunk
 		parameter FEATURE_FPU     = "NONE", // ENABLED|NONE: actual for cappuccino pipeline only
     
 		parameter OPTION_SHIFTER		= "BARREL",
@@ -187,7 +197,9 @@ module mor1kx_w
 		.FEATURE_OVERFLOW                 (FEATURE_OVERFLOW                ), 
 		.FEATURE_CARRY_FLAG               (FEATURE_CARRY_FLAG              ), 
 		.FEATURE_FASTCONTEXTS             (FEATURE_FASTCONTEXTS            ), 
+`ifdef UNDEFINED		
 		.OPTION_RF_CLEAR_ON_INIT          (OPTION_RF_CLEAR_ON_INIT         ), 
+`endif		
 		.OPTION_RF_NUM_SHADOW_GPR         (OPTION_RF_NUM_SHADOW_GPR        ), 
 		.OPTION_RF_ADDR_WIDTH             (OPTION_RF_ADDR_WIDTH            ), 
 		.OPTION_RF_WORDS                  (OPTION_RF_WORDS                 ), 
@@ -209,7 +221,9 @@ module mor1kx_w
 		.FEATURE_CUST6                    (FEATURE_CUST6                   ), 
 		.FEATURE_CUST7                    (FEATURE_CUST7                   ), 
 		.FEATURE_CUST8                    (FEATURE_CUST8                   ), 
+`ifdef UNDEFINED		
 		.FEATURE_FPU                      (FEATURE_FPU                     ), 
+`endif	
 		.OPTION_SHIFTER                   (OPTION_SHIFTER                  ), 
 		.FEATURE_STORE_BUFFER             (FEATURE_STORE_BUFFER            ), 
 		.OPTION_STORE_BUFFER_DEPTH_WIDTH  (OPTION_STORE_BUFFER_DEPTH_WIDTH ), 
